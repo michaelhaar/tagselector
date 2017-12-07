@@ -1,10 +1,10 @@
 Vue.component('tag-item', {
   props: ['tag'],
   template: `
-  <div class="tag-item" v-on:click="toggleSelect" v-bind:class="{ selected: tag.selected }">
+  <button class="tag-item" v-on:click="toggleSelect" v-bind:class="{ selected: tag.selected }">
     <i class="fa fa-check" aria-hidden="true" v-bind:class="{ hidden: !tag.selected }"></i>
     <span>{{ tag.name }}</span>
-  </div>
+  </button>
   `,
   methods: {
     toggleSelect: function () {

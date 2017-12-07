@@ -19,6 +19,7 @@ body {
 
 .tag-item {
   border-radius: 16px;
+  border-width: 0px;
   margin: 4px;
   padding: 8px 16px;
   color: white;
