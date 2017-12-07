@@ -1,0 +1,85 @@
+:root {
+  --red-tag-color: #d95e40;
+  --orange-tag-color: #f2992e;
+  --green-tag-color: #56bc8a;
+  --blue-tag-color: #529ecc;
+  --purple-tag-color: #a77dc2;
+}
+
+body {
+  background: #36465d;
+  color: white;
+}
+
+.tag-list {
+  display: flex; /* or inline-flex */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag-item {
+  border-radius: 16px;
+  margin: 4px;
+  padding: 8px 16px;
+  color: white;
+  cursor:pointer;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none !important;
+  /* Without changing the layout: */
+  /*visibility: hidden !important;*/
+}
+
+.selected {
+  /* Set the background color if a tag gets selected */
+  background: #263142 !important;
+}
+
+/* Color every 5th item red */
+.tag-item:nth-child(5n+1) {
+  background: var(--red-tag-color);
+}
+
+/* Change font color and border if tag is selected */
+.selected:nth-child(5n+1) {
+  color: var(--red-tag-color) !important;
+  box-shadow: inset 0px 0px 0px 2px var(--red-tag-color);
+}
+
+.tag-item:nth-child(5n+2) {
+  background: var(--orange-tag-color);
+}
+
+.selected:nth-child(5n+2) {
+  color: var(--orange-tag-color) !important;
+  box-shadow: inset 0px 0px 0px 2px var(--orange-tag-color);
+}
+
+.tag-item:nth-child(5n+3) {
+  background: var(--green-tag-color);
+}
+
+.selected:nth-child(5n+3) {
+  color: var(--green-tag-color) !important;
+  box-shadow: inset 0px 0px 0px 2px var(--green-tag-color);
+}
+
+.tag-item:nth-child(5n+4) {
+  background: var(--blue-tag-color);
+}
+
+.selected:nth-child(5n+4) {
+  color: var(--blue-tag-color) !important;
+  box-shadow: inset 0px 0px 0px 2px var(--blue-tag-color);
+}
+
+.tag-item:nth-child(5n+5) {
+  background: var(--purple-tag-color);
+}
+
+.selected:nth-child(5n+5) {
+  color: var(--purple-tag-color) !important;
+  box-shadow: inset 0px 0px 0px 2px var(--purple-tag-color);
+}
