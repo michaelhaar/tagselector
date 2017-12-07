@@ -25,6 +25,7 @@ body {
   color: white;
   cursor:pointer;
   font-weight: 500;
+  outline-width: 0px !important;
 }
 
 .hidden {
